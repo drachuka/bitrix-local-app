@@ -1,3 +1,4 @@
 <?php
-file_put_contents("log.txt", date('c') . " " . print_r($_REQUEST, true) . "\n", FILE_APPEND);
+// Выводим всё, что прислал Bitrix24
+file_put_contents("log.txt", print_r($_REQUEST, true), FILE_APPEND);
 echo "OK";
